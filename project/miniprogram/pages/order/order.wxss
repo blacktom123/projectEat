@@ -1,0 +1,23 @@
+/* pages/cart/cart.wxss */
+.shopping{
+  width: 100rpx;
+  height:100rpx;
+}
+.order>view{
+  font-size: 27rpx;
+  margin-top:10rpx;
+}
+.order{
+  text-align: center;
+  margin-top:300rpx;
+}
+.btn-shopping{
+  border:1rpx solid #1296DB;
+  width: 200rpx;
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 27rpx;
+  margin-top:60rpx;
+  color: #1296DB;
+}

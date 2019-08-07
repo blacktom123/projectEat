@@ -1,0 +1,70 @@
+<!--pages/menu/menu.wxml-->
+<view>
+  <view class="box">
+  <view class="header">
+    <view class="location">
+      <image src="/images/address.png"></image>
+      <view bindtap='city'>杭州</view>
+    </view>
+    <image class='menuLogo' src="/images/cadf0c6a206040670088a8f3d19cd66f.jpg"></image>
+  </view>
+  </view>
+  <view class="cotent">
+  <view class="sidebar">
+    <scroll-view class="navbar clear" scroll-with-animation="true" enable-back-to-top="true" scroll-y="false" >
+      <block wx:for="{{list}}" wx:key="index">
+        <button formType="submit" class="title" bindtap='tryDriver' data-alphaBeta="{{index}}" class="{{index==choose?'active':''}}">
+          <view>{{item.title}}</view>
+        </button>
+      </block>
+    </scroll-view>
+  </view>
+    <scroll-view id="bigWrap" class="productList" scroll-with-animation="true" enable-back-to-top="true" scroll-y="true" scroll-top="{{scrollTop}}" bindscrolltolower="loadMore" scroll-into-view="{{toView}}" bindscroll="scrollProductList">
+      <view class="gsypTitle">
+        <view class="classesTitle">{{list[0].title}}</view>
+        <view class="product-item clearFix"   wx:for="{{sflist}}" wx:key="{{index}}">
+          <image class="product-image" src="http://127.0.0.1:3000/{{item.fpic}}" mode="aspectFit"></image>
+          <view class="product-content">
+          <view>
+            <view class="product-title">{{item.fName}}</view>
+            <view class="product-price">￥{{item.price}}</view>
+          </view>
+            <view class='changeCount' bindtap='addDetail' data-id="{{item.fid}}">
+              <view>+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="classesTitle">{{list[1].title}}</view>
+        <view class="product-item clearFix"   wx:for="{{tmlist}}" wx:key="{{index}}" >
+          <image class="product-image" src="http://127.0.0.1:3000/{{item.fpic}}" mode="aspectFit"></image>
+          <view class="product-content">
+            <view>
+              <view class="product-title">{{item.fName}}</view>
+              <view class="product-price">￥{{item.price}}</view>
+            </view>
+            <view class='changeCount' bindtap='addDetail' data-id="{{item.fid}}">
+              <view>+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view>
+      <view class="classesTitle">{{list[2].title}}</view>
+        <view class="product-item clearFix"  wx:for="{{yplist}}" wx:key="{{index}}">
+          <image class="product-image" src="http://127.0.0.1:3000/{{item.fpic}}" mode="aspectFit"></image>
+          <view class="product-content">
+            <view>
+              <view class="product-title">{{item.fName}}</view>
+              <view class="product-price">￥{{item.price}}</view>
+            </view>
+            <view class='changeCount' bindtap='addDetail' data-id="{{item.fid}}">
+              <view>+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

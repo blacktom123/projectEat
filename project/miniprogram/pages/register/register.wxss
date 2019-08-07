@@ -1,0 +1,19 @@
+/* pages/register/register.wxss */
+.register{
+  margin-top:200rpx;
+  text-align: center;
+}
+.userName input,.upwd input,.phone input{
+  height:80rpx;
+  margin:0rpx 80rpx;
+  border-bottom:2rpx solid grey;
+}
+.btn-register>button{
+  padding: 0rpx 240rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-top:40rpx;
+  border-radius: 15rpx;
+  background-color:#1296DB;
+  color:white;
+}

@@ -1,0 +1,8 @@
+<!--pages/order/order.wxml-->
+<view>
+  <view class="order">
+    <image class="shopping" src="/images/order1.png"></image>
+    <view>您还没有订单哦</view>
+    <button class="btn-shopping" bindtap="jumpComment">去来一点儿</button>
+  </view>
+</view>

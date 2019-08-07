@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view>
+  <view class="login">
+  <view class="login-logo">
+    <image class="logo" src="/images/f146fb735af874481c4d1c205ee25315.jpg"></image>
+  </view>
+  <van-cell-group>
+  <van-field
+    value="{{ username }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onUserNameChange"
+    class="userName"
+  />
+  <van-field
+    value="{{ password }}"
+    placeholder="请输入密码"
+    border="{{ false }}"
+    bind:change="onUpwdChange"
+    class="upwd"
+  />
+  </van-cell-group>
+    <van-button class="btn-login" bindtap='login'>确定</van-button>
+    <view class="register" bindtap='register'>注册</view>
+  </view>
+</view>

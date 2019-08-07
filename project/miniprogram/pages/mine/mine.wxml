@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view>
+  <view class="wrapper" bindtap='jumpLogin'>
+    <image class="userImage" src="/images/a_7.png"></image>
+    <view>用户登录</view>
+  </view>
+  <view bindtap='open'>
+    <view class="box" wx:for="{{list}}" wx:key="index">
+      <view class="box-item">
+        <image class="images1" src='{{item.Imgs1}}' data-id='{{index}}'></image>
+        {{item.title}}
+      </view>
+      <view>
+        <image class="images2" src="{{item.Imgs2}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

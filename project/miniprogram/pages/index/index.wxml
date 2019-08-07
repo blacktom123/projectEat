@@ -1,0 +1,21 @@
+<view>
+<swiper class='swiper'   interval='4000' circular="true" indicator-dots='true' autoplay="true">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item><image src='{{item}}'></image></swiper-item>
+  </block>
+</swiper>
+  <view class="linkTo">
+    <view bindtap='jumpComment'>
+      现在下单
+      <image class="foodImage" src="/images/order.png"></image>
+    </view>
+    <view>
+      美食钱包
+      <image class="foodImage" src="/images/money.png"></image>
+    </view>
+    <view>
+      送他美食
+      <image class="foodImage" src="/images/gift.png"></image>
+    </view>
+  </view>
+</view>

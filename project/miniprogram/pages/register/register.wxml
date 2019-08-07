@@ -1,0 +1,27 @@
+<!--pages/register/register.wxml-->
+<view class="register">
+  <van-cell-group>
+    <van-field
+      value="{{ username }}"
+      placeholder="请输入用户名"
+      border="{{ false }}"
+      bind:change="onUserNameChange"
+      class="userName"
+    />
+    <van-field
+      value="{{ phone }}"
+      placeholder="请输入手机号"
+      border="{{ false }}"
+      bind:change="onPhoneChange"
+      class="phone"
+    />
+    <van-field
+      value="{{ password }}"
+      placeholder="请输入密码"
+      border="{{ false }}"
+      bind:change="onPassWordChange"
+      class="upwd"
+    />
+  </van-cell-group>
+  <van-button class="btn-register" bindtap='register'>确定</van-button>
+</view>

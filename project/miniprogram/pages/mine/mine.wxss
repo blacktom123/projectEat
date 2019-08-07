@@ -1,0 +1,33 @@
+/* pages/login/login.wxss */
+.userImage{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100rpx;
+}
+.wrapper{
+  margin:80rpx 50rpx;
+  display: flex;
+  justify-items: center;
+}
+.wrapper>view{
+  margin:7rpx 20rpx;
+}
+.box{
+  margin:50rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.box-item{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  margin:20rpx 0rpx;
+  justify-items: center;
+}
+.box-item>image{
+  margin-right: 23rpx;
+}
+.images1,.images2{
+  width: 30rpx;
+  height: 30rpx;
+}

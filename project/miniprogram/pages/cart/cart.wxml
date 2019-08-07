@@ -1,0 +1,35 @@
+<!--pages/cart/cart.wxml-->
+<view>
+  <view class="cart" wx:if="{{state}}">
+    <image class="shopping" src="/images/shopping.png"></image>
+    <view>您的购物车有点寂寞</view>
+    <button class="btn-shopping" bindtap='jumpComment'>去来一点儿</button>
+  </view>
+  <view wx:elif="{{!state}}">
+    <view wx:for="{{shoppingList}}" wx:key="index">
+      <view class="productList" wx:if='{{item}}'>
+      <view>
+        <view data-sid='{{index}}' class="check" bindtap='chockedShopping'>
+          <view class="unchecked" wx:if="{{item.check==true?'':'1'}}"></view>
+          <view class="checked" wx:else>
+            <image src="/images/checked.png"></image>
+          </view>
+        </view>
+          <view>
+            <view class="product-title">{{item.fName}}</view>
+            <view class="product-price">￥{{item.price}}</view>
+          </view>
+        </view>
+          <view class="changeCount" bindtap='change' data-id='{{index}}'>
+            <view data-value='-'>-</view>
+            <view>{{item.num}}</view>
+            <view data-value='+'>+</view>
+          </view>
+      </view>
+    </view>
+    <view class="total">
+      <view>实际应付￥{{price}}</view>
+      <view>去结算</view>
+    </view>
+  </view>
+</view>

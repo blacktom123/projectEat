@@ -1,0 +1,85 @@
+/* pages/menu/menu.wxss */
+.box{
+  width:100%;
+}
+.header{
+  position: fixed;
+  top:0rpx;
+  width: 100%;
+  height:37%;
+  overflow: hidden;
+  z-index:20;
+  background: white;
+}
+.menuLogo{
+  width: 100%;
+  height: 100%;
+}
+.location{
+  margin:30rpx; 
+  font-size: 30rpx;
+  display: flex;
+}
+.location>image{
+  width: 30rpx;
+  height:30rpx;
+}
+.navbar{
+  width:230rpx;
+  height: 100%;
+  background: gray;
+  position: fixed;
+  top:410rpx;
+}
+.cotent .title{
+  font-size:26rpx;
+}
+.cotent{
+  display: flex;
+  font-size: 26rpx;
+}
+.sidebar{
+  height: 100%;width: 340rpx;
+  background: gray;
+}
+.productList{
+  margin-top:430rpx;
+  margin-left:20rpx;
+  margin-right:20rpx;
+}
+.product-item{
+  display: flex;
+  align-items: center;
+  margin:20rpx 0rpx;
+}
+.product-content{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.changeCount{
+  margin:30rpx 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 100rpx;
+  background-color:#1296DB;
+  text-align: center;
+  line-height: 30rpx;
+}
+.product-image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.product-title{
+  margin:20rpx 0rpx;
+  font-weight: bold;
+}
+.product-content>view:nth-child(1){
+  margin-left:20rpx;
+}
+.product-content>view:nth-child(1){
+  margin-left:20rpx;
+}
+.active{
+  background: white !important;
+}
